@@ -1,19 +1,16 @@
 
 
 body {
-    padding: 25px;
     background-color: white;
     color: black;
     font-size: 25px
 }
 
 .root {
-    background-color: #36393f;
     color: black;
 }
 
 .page-wrapper {
-    background-color: #fb6542;
     grid-template-columns: 100%;
 }
 
@@ -22,6 +19,22 @@ body {
     top: 0;
 }
 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo_btn {
+    display: flex;
+    background-image: url(man_logo.png);
+    background-size: 70px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 70px;
+    height: 70px;
+}
 
 .main-menu {
     display: flex;
