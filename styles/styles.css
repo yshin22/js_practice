@@ -1,0 +1,77 @@
+
+
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px
+}
+
+.root {
+    background-color: #36393f;
+    color: black;
+}
+
+.page-wrapper {
+    background-color: #fb6542;
+    grid-template-columns: 100%;
+}
+
+.main-document-header-containter {
+    position: sticky;
+    top: 0;
+}
+
+
+.main-menu {
+    display: flex;
+    list-style: none;
+} 
+
+
+h1 {
+    color: #375e97;    
+    font-size: 2em;
+    font-family: Georgia;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    padding: 1px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.job-title {
+    color: #999999;
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: #fb6542;
+}
+
+.dark-mode {
+    background-color: #36393f;
+    color:white;
+}
+
+.btn {
+    background-image: url(crescent-moon.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10% 50%;
+    border: solid;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    position: top right;
+}
+
+
+
+
+
+
+
