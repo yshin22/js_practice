@@ -17,6 +17,7 @@ body {
 .main-document-header-containter {
     position: sticky;
     top: 0;
+    background-color: transparent;
 }
 
 .container {
@@ -24,7 +25,13 @@ body {
     flex-flow: row wrap;
 }
 
-.logo_btn {
+@media only screen and (max-width: 768px) {
+    .top-navigation-main {
+        display: none;
+    }
+}
+
+.logo-btn {
     display: flex;
     background-image: url(man_logo.png);
     background-size: 70px;
@@ -34,6 +41,28 @@ body {
     border: none;
     width: 70px;
     height: 70px;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+}
+
+
+.theme-btn {
+    background-image: url(sun_symbol.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 8% 50%;
+    border: solid;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 13px;
 }
 
 ul.main-menu {
@@ -50,13 +79,16 @@ li {
 
 .menu-elem {
     position:relative;
+    
 }
 
 .menu-btn {
     background-color: transparent;
     cursor: pointer;
+    border: none;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
 }
-
 
 h1 {
     color: #375e97;    
@@ -85,18 +117,11 @@ a:link, a:visited {
     color:white;
 }
 
-.btn {
-    background-image: url(crescent-moon.png);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 10% 50%;
-    border: solid;
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
-    position: top right;
+p::first-line {
+    color:#fb6542;
 }
+
+
 
 
 
