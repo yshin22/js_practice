@@ -17,20 +17,22 @@ body {
 .main-document-header-containter {
     position: sticky;
     top: 0;
-    background-color: transparent;
+    background-color: white;
 }
 
 .container {
     display: flex;
-    flex-flow: row wrap;
+    border-bottom: 2.5px solid;
 }
 
-@media only screen and (max-width: 768px) {
+/* Hides nav divs when window resizes*/
+@media only screen and (max-width: 760px) {
     .top-navigation-main {
         display: none;
     }
 }
 
+/* Style for Logo button*/
 .logo-btn {
     display: flex;
     background-image: url(man_logo.png);
@@ -43,11 +45,12 @@ body {
     height: 70px;
 }
 
+/* margin aut*/
 .theme {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
-
 
 .theme-btn {
     background-image: url(sun_symbol.png);
@@ -65,11 +68,16 @@ body {
     padding-left: 13px;
 }
 
+@media only screen and (max-width: 760px) {
+    .theme {
+        display: none;
+    }
+}
+
 ul.main-menu {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
 }
 
 li {
